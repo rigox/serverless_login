@@ -1,0 +1,20 @@
+
+service: water
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+
+functions:
+  hello:
+    handler: api/createProfile.handler
+    description: creates a  new profile
+    events:
+      - http:
+          path: profiles
+          method: post
+          cors:
+            origin: '*'
+

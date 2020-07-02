@@ -1,0 +1,25 @@
+{
+  "name": "serverless_login",
+  "version": "1.0.0",
+  "description": "using a serverless function to login using  aws lambda and json webtoken",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rigox/serverless_login.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rigox/serverless_login/issues"
+  },
+  "homepage": "https://github.com/rigox/serverless_login#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.21"
+  }
+}
