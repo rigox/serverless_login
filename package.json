@@ -20,6 +20,7 @@
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.21"
+    "mongoose": "^5.9.21",
+    "serverless-offline": "^6.4.0"
   }
 }

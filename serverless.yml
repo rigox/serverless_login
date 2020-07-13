@@ -1,7 +1,8 @@
 
 service: water
 
-
+plugins:
+  - serverless-offline
 provider:
   name: aws
   runtime: nodejs12.x
@@ -10,7 +11,7 @@ provider:
 functions:
   hello:
     handler: api/createProfile.handler
-    description: creates a  new profile
+    description: sks a  new profile
     events:
       - http:
           path: profiles
