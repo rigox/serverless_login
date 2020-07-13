@@ -1,4 +1,4 @@
-const Profile =  require("../models/Proifle.js")
+const Profile  =  require("../models/Profile")
 const colors =  require("colors")
 const db =  require("../config/db")
 
@@ -9,9 +9,10 @@ exports.handler = async(event,context,cb) =>{
   try {
         db();
 
-        const data = event.body;
+        const data = JSON.parse(event.body);
+
         
-        const profile =  await profile.create(data)
+        const profile =  await Profile.create(data)
 
         const response = {
           statusCode:201,

@@ -9,7 +9,7 @@ provider:
 
 
 functions:
-  hello:
+  createProfile:
     handler: api/createProfile.handler
     description: sks a  new profile
     events:
@@ -18,4 +18,13 @@ functions:
           method: post
           cors:
             origin: '*'
-
+    
+  Login:
+    handler: api/login.handler
+    description: logins and gets a users profile and token
+    events:
+       - http:
+            path: profiles/login
+            method: post
+            cors:
+               origin: '*'
